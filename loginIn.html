@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 这是啥 强制最高兼容适配么 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <title>百度登陆功能及首页</title>
+</head>
+
+<body>
+    <!-- wrapper_begin -->
+    <div class="wrapper">
+        <!-- header start    -->
+        <header>
+            <!-- login start -->
+            <div class="userinfo_wrap clearfix">
+                <div id="searchbox">
+                    <img src="img/show.jpg" alt="未设计">
+                </div>
+                <div class="weather_wrap" style="background: url(img/360.png) no-repeat;display: block;"></div>
+                <div class="contain clearfix">
+                    <div class="changeColor" style="width: 170px;">
+                        <span>换肤</span>
+                        <input type="button" style="background:#CCCCFF;" id="btn0" value="0" onclick="change('bg',0)">
+                        <input type="button" style="background:#7807f8;" id="btn1" value="1" onclick="change('bg',1)">
+                        <input type="button" style="background:#1616e2;" id="btn2" value="2" onclick="change('bg',2)">
+                        <input type="button" style="background:#0ad4ba;" id="btn3" value="3" onclick="change('bg',3)">
+                        <input type="button" style="background:#0ad41d;" id="btn4" value="4" onclick="change('bg',4)">
+                    </div>
+                </div>
+                <div class="login_wrap">
+                    <a id="login" class="icon_login" href="#"></a>
+                </div>
+                <!-- nav start   -->
+                <nav class="clearfix">
+                    <ul id="ulList">
+                        <li>
+                            <a href="javascript:;">新闻</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">hao123</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">地图</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">视频</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">贴吧</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">学术</a>
+                        </li>
+                        <li id="loginEnter">
+                            <a href="javascript:;">欢迎您,已登陆</a>
+                            <div id="s_user_name_menu" class="s-isindex-wrap s-user-set-menu menu-top" style="right: 157px;display:none; ">
+                                <!-- display: none; -->
+                                <div>
+                                    <a href="http://i.baidu.com/center" target="_blank" data-tid="1000"> 个人中心 </a>
+                                    <a href="http://passport.baidu.com/" data-tid="1001" target="_blank"> 帐号设置 </a>
+                                    <a class="s-feedback" style="overflow:hidden" href="#" onclick="return false;">意见反馈</a>
+                                    <a class="quit" style="overflow:hidden" href="#" onclick="return false;"> 退出 </a>
+                                </div>
+                                <span class="menu-arrow"> <em></em> </span> </div>
+                        </li>
+                        <li id="setEnter">
+                            <a href="javascript:;">设置</a>
+                            <div id="s_user_setting_menu" class="s-isindex-wrap s-user-set-menu menu-top" style="display:none; ">
+                                <!-- display:none; -->
+                                <div>
+                                    <a href="//www.baidu.com/gaoji/preferences.html" target="_blank"> 搜索设置 </a>
+                                    <a href="//www.baidu.com/gaoji/advanced.html" target="_blank"> 高级搜索 </a>
+                                    <a href="http://i.baidu.com/my/history?from=index" target="_blank"> 搜索历史 </a>
+                                    <a class="s-feedback" style="overflow:hidden" href="#" onclick="return false;"> 意见反馈 </a>
+                                </div>
+                                <span class="menu-arrow"> <em></em> </span> </div>
+                        </li>
+                        <li id="limore">
+                            <a href="javascript:;" class="a_more">更多产品</a>
+                            <ul class="moreList" style="display: none;">
+                                <li class="moreA"><a href="javascript:;">更多产品</a></li>
+                                <li>
+                                    <a href="http://www.nuomi.com/?cid=002540" name="tj_nuomi"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bdbri.png?v=md5"> 糯米
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://music.baidu.com" name="tj_mp3"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/music.png?v=md5"> 音乐
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://image.baidu.com" name="tj_img"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/image.png?v=md5"> 图片
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://zhidao.baidu.com" name="tj_zhidao"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/zhidao.png?v=md5"> 知道
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://wenku.baidu.com" name="tj_wenku"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/wenku.png?v=md5"> 文库
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://top.baidu.com" name="tj_bang"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang.png?v=md5"> 风云榜
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://top.baidu.com" name="tj_bang"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/tuiguang.png?v=md5"> 百度推广
+                                    </a>
+                                </li>
+                                <li class="moreB"><a href="https://www.baidu.com/more/">全部产品&gt;&gt;</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- nav end     -->
+            </div>
+            <!-- login end -->
+        </header>
+        <!-- header end  -->
+        <div class="content">
+            <div class="isImg"><img src="img/baidu.png" alt="百度一下，你就知道"></div>
+            <div class="isForm">
+                <form action="https://www.baidu.com/s" method="get" class="myform">
+                    <div class="search">
+                        <a href="#" class="camera"></a>
+                        <input type="text" name="wd" id="baiduid" class="baiduinput" maxlength="100" autocomplete="off">
+                        <!-- <input type="submit"> -->
+                        <input type="submit" value="百度一下" class="btn">
+                    </div>
+                </form>
+            </div>
+            <div id="myTab" class="Tabing ">
+                <ul id="tabContentUl" class="clearfix">
+                    <li class="tabin">我的关注</li>
+                    <li>推荐</li>
+                    <li>导航</li>
+                    <li>瀑布流</li>
+                </ul>
+                <!-- 这种是异步加载的方式 -->
+                <!-- <div id="tabContent">
+                    <div id="realcontent"></div>
+                </div> -->
+                <div class="contentDiv contentX">
+                    <img src="img/m1.jpg" alt="">
+                </div>
+                <div class="contentX" id="contentN">
+                    <img src="img/m2.jpg" alt="" class="contenNew">
+                </div>
+                <div class="contentX">
+                    <img src="img/m3.jpg" alt="">
+                </div>
+                <div class="contentX">
+                    <img src="img/m4.jpg" alt="">
+                </div>
+            </div>
+            <div id="s_top_feed" class="top-feed">
+                <div class="to-top" data-tool="1" style="visibility: hidden;">
+                    <div class="icon-mask">
+                        <div class="text"> 回到顶部 </div>
+                    </div> <span class="icon"></span> </div>
+            </div>
+            <footer>
+            </footer>
+            <div class="alert">
+                <form action="index.html" method="get" class="alerForm">
+                    <div class="rowing">
+                        百度登录窗口<a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="closeBtn">×</a>
+                    </div>
+                    <div class="row">
+                        用户名: <span class="inputBox">
+                <input type="text" id="txtName" placeholder="账号/邮箱" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn">*</a>
+                    </div>
+                    <div class="row">
+                        密&nbsp;&nbsp;&nbsp;&nbsp;码: <span class="inputBox">
+                <input type="password" id="txtPwd" placeholder="密码" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn2">*</a>
+                    </div>
+                    <div class="row">
+                        <input type="submit" value="登陆" id="loginbtn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <!-- wrapper_end     -->
+        <!-- js代码放在最下面好些 -->
+        <script src="js/jquery-2.1.1.min.js"></script>
+        <script src="js/cookie.js"></script>
+        <script src="js/app.js"></script>
+</body>
+
+</html>

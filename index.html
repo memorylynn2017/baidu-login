@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <!-- 这是啥 强制最高兼容适配么 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=0" name="viewport" />
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/jquery-2.1.1.min.js"></script>
+    <script src="js/app.js"></script>
+    <title>百度登陆功能及首页</title>
+</head>
+
+<body>
+    <!-- wrapper_begin -->
+    <div class="wrapper">
+        <!-- header start    -->
+        <header>
+            <!-- login start -->
+            <div class="userinfo_wrap">
+                <div class="weather_wrap" style="background: url(img/360.png) no-repeat;"></div>
+                <div class="login_wrap">
+                    <a id="login" class="icon_login" href="#"></a>
+                </div>
+                <!-- nav start   -->
+                <nav class="clearfix">
+                    <ul id="ulList">
+                        <li>
+                            <a href="javascript:;">新闻</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">hao123</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">地图</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">视频</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">贴吧</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">学术</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" id="loginEnter">登陆</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;">设置</a>
+                        </li>
+                        <li>
+                            <a href="javascript:;" class="a_more">更多产品</a>
+                            <ul class="moreList" style="display: none;">
+                                <li class="moreA"><a href="javascript:;">更多产品</a></li>
+                                <li>
+                                    <a href="http://www.nuomi.com/?cid=002540" name="tj_nuomi"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bdbri.png?v=md5"> 糯米
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://music.baidu.com" name="tj_mp3"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/music.png?v=md5"> 音乐
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://image.baidu.com" name="tj_img"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/image.png?v=md5"> 图片
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://zhidao.baidu.com" name="tj_zhidao"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/zhidao.png?v=md5"> 知道
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://wenku.baidu.com" name="tj_wenku"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/wenku.png?v=md5"> 文库
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://top.baidu.com" name="tj_bang"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/bang.png?v=md5"> 风云榜
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="http://top.baidu.com" name="tj_bang"><img src="https://ss0.bdstatic.com/5aV1bjqh_Q23odCf/static/superman/img/topnav/tuiguang.png?v=md5"> 百度推广
+                                    </a>
+                                </li>
+                                <li class="moreB"><a href="https://www.baidu.com/more/">全部产品&gt;&gt;</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+                <!-- nav end     -->
+            </div>
+            <!-- login end -->
+        </header>
+        <!-- header end  -->
+        <div class="content">
+            <div class="isImg"><img src="img/baidu.png" alt="百度一下，你就知道"></div>
+            <div class="isForm">
+                <form action="https://www.baidu.com/s" method="get" class="myform">
+                    <div class="search">
+                        <a href="#" class="camera"></a>
+                        <input type="text" name="wd" id="baiduid" class="baiduinput" maxlength="100" autocomplete="off">
+                        <!-- <input type="submit"> -->
+                        <input type="submit" value="百度一下" class="btn">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <footer>
+            <div class="code footerTop">
+                <img src="img/zbios_efde696.png" alt="二维码图片">
+                <br>
+                <span>手机百度</span>
+            </div>
+            <div class="copy footerBottom">
+                <p class="pTop">
+                    <a href="https://www.baidu.com/cache/sethelp/help.html">把百度设为主页</a> &nbsp;&nbsp;
+                    <a href="http://home.baidu.com/">关于百度</a>&nbsp;&nbsp;
+                    <a href="http://ir.baidu.com/">About  Baidu</a>&nbsp;&nbsp;
+                    <a href="http://e.baidu.com/?refer=888">百度推广</a>
+                </p>
+                <p class="pBottom">
+                    <span>©2017 Baidu</span>
+                    <a href="http://www.baidu.com/duty/">使用百度前必读</a>
+                    <a href="">意见反馈</a>
+                    <span>京ICP证030173号</span>
+                    <a href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=11000002000001" class="jing">京公网安备11000002000001号</a>
+                </p>
+            </div>
+        </footer>
+        <div class="alert">
+            <form action="loginIn.html" method="get" class="alerForm">
+                <div class="rowing">
+                    百度登录窗口<a href="javascript:void(0)" title="关闭窗口" class="close_btn" id="closeBtn">×</a>
+                </div>
+                <div class="row">
+                    用户名: <span class="inputBox">
+                <input type="text" id="txtName" placeholder="账号/邮箱" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn">*</a>
+                </div>
+                <div class="row">
+                    密&nbsp;&nbsp;&nbsp;&nbsp;码: <span class="inputBox">
+                <input type="password" id="txtPwd" placeholder="密码" />
+            </span><a href="javascript:void(0)" title="提示" class="warning" id="warn2">*</a>
+                </div>
+                <div class="row">
+                    <input type="submit" value="登陆" id="loginbtn">
+                </div>
+            </form>
+        </div>
+    </div>
+    <!-- wrapper_end     -->
+    <script>
+    $(function($) {
+        //弹出登录
+        $("#loginEnter").hover(function() {
+            $(this).stop().animate({
+                // backgroundColor: 'blue',
+                opacity: '1'
+            }, 600);
+        }, function() {
+            $(this).stop().animate({
+                // backgroundColor: 'blue',
+                opacity: '0.6'
+            }, 1000);
+        }).on('click', function() {
+            $("body").append("<div id='mask'></div>");
+            $("#mask").addClass("floats").fadeIn("slow");
+            $(".alert").fadeIn("slow");
+        });
+
+        //关闭
+        $(".close_btn").hover(function() {
+            $(this).css({
+                color: 'black'
+            })
+        }, function() {
+            $(this).css({
+                color: '#999'
+            })
+        }).on('click', function() {
+            $(".alert").fadeOut("fast");
+            $("#mask").css({
+                display: 'none'
+            });
+        });
+
+    });
+    </script>
+</body>
+
+</html>
